@@ -1,0 +1,41 @@
+.btn {
+  color: $white;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+  background-color: inherit;
+  border-color: inherit;
+}
+
+.btn-primary {
+  background-color: $primary3;
+  border-color: $primary3;
+
+  &:hover {
+    background-color: $primary2;
+    border-color: $primary2;
+  }
+
+  &:focus {
+    background-color: $primary3;
+    border-color: $primary3;
+  }
+}
+
+
+.btn-outline-primary {
+  border: 1px solid;
+  border-color: $white;
+
+  &:hover {
+    background-color: $primary3;
+    border-color: $white;
+  }
+
+  &:focus {
+    border-color: $white;
+  }
+
+}
